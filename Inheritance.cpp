@@ -25,7 +25,6 @@ public:
 	{
 		cout << "Inside Vehicle ctor\n";
 	}
-	
 };
 
 class Car:public Vehicle
@@ -43,7 +42,7 @@ public:
 	// Syntax:
 		// class derived:access_modifier class1, access_modifier class2, ...
 		// {
-		// 	body
+		// 		body
 		// }
 	// Imp ponts:
 		// Ctors of inherited class are called in the same order in which they are inherited. While dtors are called in the exact reverse order of ctors. Look at the below example of classes A, B and C. To understand this well.

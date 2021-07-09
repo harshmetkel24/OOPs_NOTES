@@ -15,6 +15,7 @@ public:
 		cout << "i: " << i << endl;
 	}
 }obj; // object of anonymous class
+// these objects are global objects
 
 int main(int argc, char const *argv[])
 {

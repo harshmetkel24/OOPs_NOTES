@@ -45,13 +45,13 @@ public:
 	// copy constructors:
 		// is a member function that initializes an object using another object of the same class.
 		// prototype: ClassName (const ClassName &old_obj);
-		// if we don't define our own copy ctor, then compiler and does member-wise copy of objects
+		// if we don't define our own copy ctor, then compiler does member-wise copy of objects member varibles
 	// When user defined copy-constructor called?
-		// generally compiler copy ctors are fine. But one needs to define own ctor only in case if object has pointers or any runtime allocation of resources like filehandling, connection, etc.
+		// generally compiler copy ctors are fine. But one needs to define own ctor only in case if object has pointers or any runtime allocation of resources like filehandling, connection, etc. is made.
 	// Can copy ctor be private for any class?
 		// Yeah copy ctor can be private. In that case the objects of that class are non copyable.
 		// this becomes very helpful in case when we have some pointers or dynamic resource allocation. or another way would be to use our own copy ctor as in String class
-	// Wht argument to copy ctor must be by reference?
+	// Why argument to copy ctor must be by reference?
 		// A copy constructor is called when an object is passed by value. A copy ctor itself is fucntion. So if we pass by value, then a call to copy ctor would be made to call to copy ctor which becomes non-terminating loop of calls. so compiler doesn't allow this.
 
 class point
